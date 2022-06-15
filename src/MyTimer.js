@@ -98,7 +98,7 @@ export default function MyTimer(props){
 
     return(
         <>
-            <h2>Time : {timeInfo.totalTime}</h2>
+            <h2>ReactJS Count Down Timer</h2>
             <h2>
             {String(timeInfo.mini).padStart(2,'0')}:{String(timeInfo.sec).padStart(2,'0')}
             </h2>
