@@ -15,35 +15,7 @@ export default function MyTimer(props){
     
     const [pause, setPause] = useState(true);
 
-    // function startTimer(){
-    //     const intervalId = setInterval( (prevtimeInfo) => {
-    //             console.log('About to start ...');
-    //             // Update time
-    //             setTimeInfo(function(prevtimeInfo){
-    //                 console.log( 'setTime info ',timeInfo.totalTime)
-    //                 if( timeInfo.totalTime > 0  ){
-    //                     console.log( 'totalTime : ' , timeInfo.totalTime );
-    //                     return {
-    //                         ...prevtimeInfo,
-    //                         totalTime : prevtimeInfo.totalTime - 1,
-    //                         mini: Math.floor(prevtimeInfo.totalTime / 60) ,
-    //                         sec:  Math.floor(prevtimeInfo.totalTime % 60)
-    //                     }
-    //                 } else if( pause ) {
-    //                     console.log( 'PAUSE CONDITION' )
-    //                     return {
-    //                         ...prevtimeInfo,
-    //                         totalTime : prevtimeInfo.totalTime ,
-    //                         mini: Math.floor(prevtimeInfo.totalTime / 60) ,
-    //                         sec:  prevtimeInfo.totalTime % 60
-    //                     }
-    //                 } else {
-    //                      clearInterval(intervalId)
-    //                 }
-    //             })
-            
-    //     },1000)
-    // }
+
 
     useEffect(() => {
         let interval = null;
